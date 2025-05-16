@@ -1,0 +1,52 @@
+{
+    "products" : [
+        {
+            "name" : "smart watch1",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-1.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch2",
+            "price" : "1210$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-2.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch3",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-3.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch4",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-4.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch5",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-5.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch5",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-6.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch5",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-7.png",
+            "description" : "lorem"
+        },
+        {
+            "name" : "smart watch5",
+            "price" : "100$",
+            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-6.png",
+            "description" : "lorem"
+        }
+    ]
+}
