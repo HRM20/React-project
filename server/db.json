@@ -1,52 +1,92 @@
 {
-    "products" : [
-        {
-            "name" : "smart watch1",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-1.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch2",
-            "price" : "1210$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-2.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch3",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-3.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch4",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-4.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch5",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-5.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch5",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-6.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch5",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-7.png",
-            "description" : "lorem"
-        },
-        {
-            "name" : "smart watch5",
-            "price" : "100$",
-            "img" : "https://p.w3layouts.com/demos/luxury_watches/web/images/p-6.png",
-            "description" : "lorem"
-        }
-    ]
+  "products": [
+ {
+  "id": 1,
+  "name": "Casio G-Shock",
+  "price": "135$",
+  "description": "Shock-resistant digital watch",
+  "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-3.png",
+  "thumbnails": [
+        "https://placehold.co/80x80?text=O1",
+        "https://placehold.co/80x80?text=O2"
+      ]
+},
+    {
+      "id": 2,
+      "name": "Tissot Gentleman",
+      "price": "520$",
+      "description": "Elegant Swiss-made watch perfect for both formal and casual wear.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-4.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=T1",
+        "https://placehold.co/80x80?text=T2"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fossil Grant Chronograph",
+      "price": "190$",
+      "description": "Classic chronograph with Roman numerals and leather strap.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-5.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=F1",
+        "https://placehold.co/80x80?text=F2"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Seiko 5 Automatic",
+      "price": "270$",
+      "description": "Reliable automatic movement with sporty design and day-date display.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-6.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=S1",
+        "https://placehold.co/80x80?text=S2"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Daniel Wellington Iconic Link",
+      "price": "220$",
+      "description": "Minimalist stainless steel watch with refined elegance.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-7.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=D1",
+        "https://placehold.co/80x80?text=D2"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Huawei Watch GT",
+      "price": "180$",
+      "description": "Smartwatch with long battery life, fitness tracking, and AMOLED display.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-6.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=H1",
+        "https://placehold.co/80x80?text=H2"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Timex Expedition Scout",
+      "price": "110$",
+      "description": "Durable field watch with classic military styling and INDIGLO backlight.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-5.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=TX1",
+        "https://placehold.co/80x80?text=TX2"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Orient Bambino V4",
+      "price": "190$",
+      "description": "Elegant automatic dress watch with domed crystal and vintage charm.",
+      "img": "https://p.w3layouts.com/demos/luxury_watches/web/images/p-4.png",
+      "thumbnails": [
+        "https://placehold.co/80x80?text=O1",
+        "https://p.w3layouts.com/demos/luxury_watches/web/images/s-2.jpg"
+      ]
+    }
+  ]
 }

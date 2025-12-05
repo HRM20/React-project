@@ -1,10 +1,10 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -34,7 +34,8 @@ h1 {
 }
 
 .navbar a {
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: large;
   color: black;
   text-decoration: none;
   transition: color 0.5s;
@@ -47,12 +48,12 @@ h1 {
 }
 
 .navbar-searchbox input {
-  padding: .2em 1em;
+  padding: 0.2em 1em;
 }
 
 .brand-name {
   color: black;
-  font-family: 'Lora-Regular';
+  font-family: "Lora-Regular";
   text-transform: uppercase;
   text-align: center;
   padding: 25px 0 20px;
@@ -69,8 +70,31 @@ h1 {
   margin: 0 auto;
   border-radius: 13px;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: bold;
+}
+/* slider */
+.carousel-item img {
+  height: 700px;
+  object-fit: cover;
+}
+
+/* استایل دات‌ها (مربع و بیرون عکس) */
+.carousel-indicators {
+  position: static; /* جای ثابت، نه روی عکس */
+  margin-top: 15px; /* فاصله از اسلایدر */
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+  background-color: #333; /* رنگ مربع‌ها */
+  border-radius: 3px; /* مربع با کمی گردی */
+}
+
+.carousel-indicators .active {
+  background-color: rgb(78, 78, 78); /* رنگ مربع فعال */
 }
 
 .Inventory {
@@ -94,8 +118,19 @@ h1 {
 .specifications {
   font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #fff;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   color: #fff;
+}
+
+.category-name {
+  color: black;
+  font-family: "Lora-Regular";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 15px;
+  border-bottom: 1px solid gray;
+  margin: 20px 0;
+  font-size: x-large;
 }
 
 .list-detail {
@@ -107,7 +142,7 @@ h1 {
 }
 
 .list-detail li {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .about-box {
@@ -125,11 +160,12 @@ h1 {
   width: 25%;
 }
 
-.about-box h4, h3 {
+.about-box h4,
+h3 {
   font-size: 2.2em;
   margin: 0;
   color: #000;
-  font-family: 'BreeSerif-Regular';
+  font-family: "BreeSerif-Regular";
   text-align: center;
 }
 
@@ -163,7 +199,7 @@ h1 {
 .footer-top div h4 {
   font-size: 1.5em;
   color: #000;
-  font-family: 'BreeSerif-Regular';
+  font-family: "BreeSerif-Regular";
 }
 
 .footer-top a {
@@ -174,19 +210,66 @@ h1 {
 }
 
 .footer-top a:hover {
-  color: #337ab7;
+  color: #73b6e1;
   transform: scale(1.1);
 }
 
-.footer-down {
+/* .footer-down {
   padding: 1.5rem;
+} */
+
+.footer-down {
+  display: flex;
+  justify-content: center; /* وسط‌چین کردن */
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.footer p {
+  font-family: "BreeSerif-Regular";
+}
+
+.GetEmail {
+  display: flex;
+  align-items: center; /* اینپوت و دکمه هم‌سطح */
+  gap: 10px; /* فاصله بین اینپوت و دکمه */
+}
+
+.GetEmail input {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  background: #fff;
+  outline: none;
+  border-radius: 4px;
+}
+
+.GetEmail .EmailBtn {
+  padding: 6px 16px;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.GetEmail .EmailBtn:hover {
+  background: #73b6e1;
+  color: #fff;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  color: black;
+  display: inline-block;
 }
 
 .Home {
   width: 100%;
 }
 
-.home-1, .home-2, .home-3 {
+.home-1,
+.home-2,
+.home-3 {
   text-align: center;
   padding: 1rem;
 }
@@ -200,7 +283,8 @@ h1 {
   width: 70%;
 }
 
-.home-2, .home-3 {
+.home-2,
+.home-3 {
   width: 30%;
   display: flex;
   justify-content: space-between;
@@ -216,11 +300,13 @@ h1 {
   justify-content: start;
 }
 
-.home-2 img, .home-3 img {
+.home-2 img,
+.home-3 img {
   width: 40%;
 }
 
-.home-2 div, .home-3 div {
+.home-2 div,
+.home-3 div {
   padding: 1rem;
 }
 /*-----------*/
@@ -272,8 +358,13 @@ h1 {
 }
 
 @keyframes border-animation {
-  0%, 100% { border-color: #fff; }
-  50% { border-color: #000000b9; }
+  0%,
+  100% {
+    border-color: #fff;
+  }
+  50% {
+    border-color: #000000b9;
+  }
 }
 
 /* ---product card--- */
@@ -302,14 +393,20 @@ a {
   width: 300px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
-  margin: 30px auto;
+  margin: 10px auto;
   background: #fafafa;
 }
 
 /* افکت‌های انیمیشنی برای نمایش بخش‌ها */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .product-card {
@@ -357,6 +454,17 @@ a {
   padding: 30px;
 }
 
+.product-details p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+  flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* نمایش حداکثر 3 خط */
+  -webkit-box-orient: vertical;
+}
+
 .product-catagory {
   display: block;
   font-size: 12px;
@@ -374,11 +482,11 @@ a {
   color: #363636;
   text-decoration: none;
   transition: 0.3s;
-  font-family: 'BreeSerif-Regular';
+  font-family: "BreeSerif-Regular";
 }
 
 .product-details h4 a:hover {
-  color: #73B6E1;
+  color: #73b6e1;
 }
 
 .product-details p {
@@ -401,14 +509,13 @@ a {
 }
 
 .product-bottom-details div a:hover {
-  color: #73B6E1;
+  color: #73b6e1;
 }
 
 .product-price {
   font-size: 18px;
   font-weight: 600;
-  color: #73B6E1
-
+  color: #73b6e1;
 }
 
 .product-price small {
@@ -484,8 +591,12 @@ a {
 }
 
 @keyframes rotateAround {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .Address {
@@ -506,22 +617,27 @@ a {
 }
 
 .contact {
-  padding: 6em 0;
+  padding: 4em 0;
+  background: #f9f9f9; /* پس‌زمینه ملایم */
 }
 
 .contact h4 {
   font-size: 2.2em;
-  color: #000;
-  font-family: 'BreeSerif-Regular';
+  color: #333;
+  font-family: "BreeSerif-Regular", serif;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .contact-text {
-  margin-top: 4%;
+  margin:  0 5rem;
   display: flex;
+  gap: 2em; /* فاصله بین ستون‌ها */
+  padding: 1rem;
 }
 
-.contact-right, .contact-left {
+.contact-right,
+.contact-left {
   width: 50%;
   padding: 1rem;
 }
@@ -529,29 +645,91 @@ a {
 .contact-right {
   text-align: left;
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .contact-right form {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding: 1rem;
   gap: 1em;
-  width: 50%;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  /* box-shadow: 0px 4px 12px rgba(0,0,0,0.1); سایه نرم */
 }
 
-.contact-right form input {
-  gap: 10px;
+.contact-right form input,
+.contact-right form textarea {
   padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.contact-right form input:focus,
+.contact-right form textarea:focus {
+  border-color: #73b6e1;
+  outline: none;
+  box-shadow: inset 0px -5px 8px rgba(115, 182, 225, 0.3);
+}
+
+.submit-btn input {
+  background: #73b6e1;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn input:hover {
+  background: #559ac7; /* رنگ تیره‌تر در حالت hover */
 }
 
 .contact-left .address {
-  padding: 1em;
+  background: #fff;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  /* box-shadow: 0px 4px 12px rgba(0,0,0,0.05); */
 }
 
+.contact-left .address h5 {
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.submit-btn button {
+  background: linear-gradient(135deg, #73b6e1, #559ac7); /* طیف رنگی هماهنگ */
+  color: #fff;
+  border: none;
+  padding: .75rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15); /* سایه نرم */
+}
+
+.submit-btn button:hover {
+  background: linear-gradient(135deg, #559ac7, #3a7fb0); /* تغییر طیف در حالت hover */
+  transform: translateY(-2px); /* کمی بالا آمدن */
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.2);
+}
+
+.submit-btn button:active {
+  transform: translateY(0); /* برگشت به حالت اولیه هنگام کلیک */
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+
 .view-details {
-  background: linear-gradient(45deg, #73B6E1, #2567d8);
+  background: linear-gradient(45deg, #73b6e1, #2567d8);
   color: white;
   padding: 5px 10px;
   font-size: 16px;
@@ -562,12 +740,590 @@ a {
 }
 
 .view-details:hover {
-  background: linear-gradient(45deg, #2575fc, #73B6E1);
+  background: linear-gradient(45deg, #2575fc, #73b6e1);
 }
 
 .view-details:active {
   transform: scale(0.95);
 }
 
+/*  product detail  */
+.btn-custom {
+  background-color: #73b6e1;
+  border-color: #73b6e1;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #419dd6;
+  border-color: #419dd6;
+  color: white;
+}
+
+/* login page */
+
+.ll {
+  background-image: url("img/login-img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh; /* کل صفحه */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora-Regular";
+}
+
+.login {
+  display: flex;
+  width: 80%; /* عرض کلی اسلایدها */
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.85); /* نیمه‌شفاف برای دیده شدن بک‌گراند */
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 8px white solid;
+}
+
+/* login image */
+
+.login-img,
+.login-input {
+  width: 50%;
+}
+
+.login-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("img/login-img.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.topText {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.up-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.downtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #f0f0f0;
+  text-align: left;
+}
+
+.login-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* کانتینر اصلی */
+.login-input {
+  padding: 20px;
+  background: #fff;
+  font-family: "Lora-Regular";
+}
+
+/* متن بالای فرم */
+.title-text {
+  padding: 6rem 2rem 1rem 2rem;
+}
+
+.title-text h6 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #419dd6;
+}
+
+.title-text p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ورودی‌ها */
+.Email-input-login,
+.password-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  border: #000 0.5px;
+  text-align: left;
+}
+
+.Email-input-login label,
+.password-input label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.Email-input-login input,
+.password-input input {
+  padding: 10px;
+  border: 1px solid #00000067;
+  border-radius: 4px;
+  outline: none;
+  text-align: left;
+  background-color: rgb(230, 230, 230);
+}
+
+.Email-input-login input:focus,
+.password-input input:focus {
+  border-color: #51a9e0;
+}
+
+/* بخش Remember و Forgot */
+.chick {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chickBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.forgotPass a {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* دکمه‌ها */
+.signIn-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.signIn-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signIn-box button:first-child {
+  background: #73b6e1;
+  color: #fff;
+}
+.signIn-box button:first-child:hover {
+  background-color: #51a9e0;
+}
+
+.signIn-box button:last-child {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.signIn-box button:last-child:hover{
+  background-color: #dfdddd;
+}
+/* بخش ثبت‌نام */
+.signUp {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8rem;
+}
+
+.signUp a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* sign up page */
+/* کانتینر اصلی */
+.ll-signup {
+  background-image: url("img/signUp-img.jpg"); /* همون تصویر یا مشابه لاگین */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh; /* کل صفحه */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora-Regular";
+}
+
+/* جعبه اصلی */
+.signup {
+  display: flex;
+  width: 80%; /* عرض کلی اسلایدها */
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.85); /* نیمه‌شفاف مثل لاگین */
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 8px solid white; /* بوردر سفید مثل لاگین */
+}
+
+/* بخش تصویر */
+.signup-img,
+.signup-input {
+  width: 50%;
+}
+
+.signup-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("img/signUp-img.jpg"); /* تصویر سمت چپ */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  text-align: left;
+}
+
+.topText {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.up-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.downtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* بخش فرم */
+.signup-input {
+  padding: 20px;
+  background: #fff;
+}
+
+.title-text {
+  padding: 6rem 2rem 1rem 2rem;
+}
+
+.title-text h6 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #419dd6; /* آبی مثل لاگین */
+}
+
+.title-text p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ورودی‌ها */
+.Email-input-login,
+.password-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.Email-input-login label,
+.password-input label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.Email-input-login input,
+.password-input input {
+  padding: 10px;
+  border: 1px solid #00000067;
+  border-radius: 4px;
+  outline: none;
+  background-color: rgb(230, 230, 230);
+}
+
+.Email-input-login input:focus,
+.password-input input:focus {
+  border-color: #51a9e0; /* آبی مثل لاگین */
+}
+
+/* دکمه‌ها */
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.signup-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-box button:first-child {
+  background: #73b6e1; /* آبی مثل لاگین */
+  color: #fff;
+}
+
+.signup-box button:first-child:hover {
+  background-color: #51a9e0;
+}
+
+.signup-box button:last-child {
+  background: #f5f5f5;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.signup-box button:last-child:hover {
+  background-color: #dfdddd;
+}
+
+/* بخش لینک ورود */
+.signUp {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8rem;
+}
+
+.signUp a {
+  color: #007bff; /* آبی مثل لاگین */
+  text-decoration: none;
+}
 
 
+/* not Found page */
+.notfound {
+  display: flex;
+  flex-direction: column; /* ستون اصلی */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.904);
+  font-family: "Lora-Regular";
+  text-align: center;
+  
+}
+
+/* بخش بالا: 4 [تصویر] 4 */
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent); */
+   /* box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.4); */
+
+
+}
+
+
+.four {
+  font-size: 300px;
+  font-weight: bold;
+  color: white;
+  /* margin: 0 20px; */
+}
+
+.four, .image img {
+  filter: invert(0px 20px 15px rgba(0,0,0,0.3));
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+}
+
+/* بخش پایین: متن‌ها زیر هم */
+.message {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; /* ستون */
+  align-items: center;
+}
+
+.message h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 10px;
+  padding: 2rem;
+}
+
+.message p {
+  font-size: 18px;
+  color: white;
+  margin: 5px 0;
+}
+
+.links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row; /* لینک‌ها زیر هم */
+  gap: 60px;
+}
+
+.links a {
+ color: #419dd6;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #2567d8;
+}
+
+
+
+/* Dropdown Filter */
+
+/* body {
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+} */
+
+/* .container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+} */
+.summary {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.summary:hover {
+  background-color: #e0e0e0;
+}
+
+.scrollable-list {
+  --shadow-y-offset: 10px;
+  --shadow-blur: 15px;
+  --shadow-spread: -16px;
+  --shadow-color: rgb(0 0 0 / 0.3);
+
+  overflow-y: auto;
+  max-height: 300px;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  scroll-timeline-name: --container-scroll;
+  scroll-timeline-axis: block;
+
+  animation: scroll-shadow-vertical linear;
+  animation-timeline: --container-scroll;
+}
+
+@keyframes scroll-shadow-vertical {
+  0% {
+    box-shadow: inset 0 calc(-1 * var(--shadow-y-offset)) var(--shadow-blur)
+      var(--shadow-spread) var(--shadow-color);
+  }
+  5% {
+    box-shadow: inset 0 var(--shadow-y-offset) var(--shadow-blur)
+        var(--shadow-spread) var(--shadow-color),
+      inset 0 calc(-1 * var(--shadow-y-offset)) var(--shadow-blur)
+        var(--shadow-spread) var(--shadow-color);
+  }
+  95% {
+    box-shadow: inset 0 var(--shadow-y-offset) var(--shadow-blur)
+        var(--shadow-spread) var(--shadow-color),
+      inset 0 calc(-1 * var(--shadow-y-offset)) var(--shadow-blur)
+        var(--shadow-spread) var(--shadow-color);
+  }
+  100% {
+    box-shadow: inset 0 var(--shadow-y-offset) var(--shadow-blur)
+      var(--shadow-spread) var(--shadow-color);
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.checkbox-label.checked {
+  background-color: #e3f2fd;
+}
+
+.checkbox-label:hover:not(.checked) {
+  background-color: #f0f0f0;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  font-size: 15px;
+}
+
+.selected-items {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.selected-items h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.selected-items p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}

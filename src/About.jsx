@@ -1,9 +1,12 @@
-
+import { NavLink } from "react-router-dom";
 const About = () => {
   return (
     <div style={{margin:"1rem auto"}}>
+      <div className='Address'>
+    <NavLink to="/Home">Home</NavLink>{<span>/About</span>}
+  </div>
       <div className="about-box">
-
+      
         <h3> About us</h3>
 
         <p> Sapphire Studios Design, specialises in fine jewellery and premium perfumes. Our brand is synonymous with artistry, luxury, and meaningful design.

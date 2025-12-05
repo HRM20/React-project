@@ -11,10 +11,10 @@ const Navbar = () => {
           <input type="text" placeholder="search" />
         </div>
         <div className="navbar-list">
-          <NavLink to="/contact">Contact</NavLink>
-          <NavLink to="/about">About Us</NavLink>
-          <NavLink to="/card">Products </NavLink>
-          <NavLink to="/Home">Home</NavLink>
+          <NavLink to="/contact">CONTACT</NavLink>
+          <NavLink to="/about">ABOUT US</NavLink>
+          <NavLink to="/card">PRODUCTS</NavLink>
+          <NavLink to="/Home">HOME</NavLink>
         </div>
 
       </div>

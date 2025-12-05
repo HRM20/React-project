@@ -1,14 +1,28 @@
-// import aks from "./assets/404.png"
-import { Link } from "react-router-dom"
+import errorImage from "./img/nf-page.png";
 
-const NotFound = () => {
+export default function NotFound() {
   return (
-    <div>
-      <img src={"https://www.pngkey.com/png/detail/147-1473883_404-error-404-not-found-png.png"} alt="" style={{width: "90%" , margin:"0 0"}} />
-    <br />
-      <Link to="/">BACK TO MAIN PAGE</Link>
-    </div>
-  )
-}
+    <div className="notfound">
+      {/* بخش بالا: 4 [تصویر] 4 */}
+      <div className="top">
+        <div className="four">4</div>
+        <div className="image">
+          <img src={errorImage} alt="Not Found" />
+        </div>
+        <div className="four">4</div>
+      </div>
 
-export default NotFound
+      {/* بخش پایین: متن‌ها به صورت ستون */}
+      <div className="message">
+        <h1>! Sorry </h1>
+        <p>.We couldn’t find what you were looking for</p>
+        <p>:Try one of these pages</p>
+        <div className="links">
+          <a href="/contact">Contact Us</a>
+          <a href="/about">About</a>
+          <a href="/home">Home</a>
+        </div>
+      </div>
+    </div>
+  );
+}

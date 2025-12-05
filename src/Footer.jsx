@@ -4,9 +4,9 @@ function Footer() {
       <div className="footer-top">
             <div>
               <h4>Follow Us</h4>
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-twitter-x"></i>
-              <i class="fa fa-google"></i>
+              <i class="bi bi-facebook icon"></i>
+              <i class="bi bi-twitter-x icon"></i>
+              <i class="bi bi-google icon"></i>
             </div>
         <div className="text-F">
             <h4>Information</h4>
@@ -28,10 +28,18 @@ function Footer() {
         </div>
       </div>
       <div className="footer-down">
-      <p>© 2025 Developed by HRM. All rights reserved.</p>
-<p>This design was inspired by Sapphire Studios Design.</p>
-        <nav class="navbar bg-body-tertiary">
-</nav>
+        <div>
+          <p>This design was inspired by Sapphire Studios Design.</p> 
+        </div>
+        <div className="GetEmail">
+          <button className="EmailBtn">Subscribe</button>
+          <input type="text" name="" id="" placeholder="Enter your email" />
+        </div>
+        
+      {/* <p>© 2025 Developed by HRM. All rights reserved.</p>
+<p>This design was inspired by Sapphire Studios Design.</p> */}
+        {/* <nav class="navbar bg-body-tertiary">
+</nav> */}
       </div>
     </div>
   )
