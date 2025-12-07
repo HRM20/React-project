@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ProductList from "../src/ProductList"; // مسیر رو مطابق پروژه خودت تنظیم کن
 import DropdownFilter from "./DropdownFilter";
+import Reviews from "./Reviews";
 // import Spinner from "../Spinner";
 
 const Home = () => {
@@ -131,7 +132,57 @@ const Home = () => {
 
       {/* لیست محصولات */}
       <ProductList loading={loading} products={products} />
-      {/* <DropdownFilter /> */}
+
+      {/* promise section */}
+      <div className="our-promise">
+        <div className="promise-box">
+          <div className="promise-title">
+            <h2 className="our-promise-title">Our Promise</h2>
+            <p className="our-promise-subtitle">
+              Trust | Honesty | Transparency
+            </p>
+          </div>
+
+          <div className="our-promise-box">
+            <div className="promise-item">
+              <div className="promise-icon">
+                <i className="bi bi-truck"></i>
+              </div>
+              <h4>Free Shipping</h4>
+              <p>Enjoy fast, free overnight shipping on all orders.</p>
+            </div>
+            <div className="promise-item">
+              <div className="promise-icon">
+                <i className="bi bi-clock-history"></i>
+              </div>
+              <h4>Real Time Inventory</h4>
+              <p>
+                Every watch on our website is in stock and ready for sale.
+                Including hourly New Arrivals.
+              </p>
+            </div>
+            <div className="promise-item">
+              <div className="promise-icon">
+                <i className="bi bi-eye"></i>
+              </div>
+              <h4>Full Transparency</h4>
+              <p>
+                We publish the buy and sell prices for all watches to honor the
+                fair market value of all products.
+              </p>
+            </div>
+            <div className="promise-item">
+              <div className="promise-icon">
+                <i className="bi bi-shield-check"></i>
+              </div>
+              <h4>100% Authentic</h4>
+              <p>All watches are 100% Authentic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* reviews section */}
+      <Reviews />
     </>
   );
 };

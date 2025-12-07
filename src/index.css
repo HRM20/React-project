@@ -122,6 +122,18 @@ h1 {
   color: #fff;
 }
 
+.products-box{
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.main-box-products{
+  display: flex;
+  /* width: 80%; */
+  gap: 10px;
+}
+
 .category-name {
   color: black;
   font-family: "Lora-Regular";
@@ -162,7 +174,7 @@ h1 {
 
 .about-box h4,
 h3 {
-  font-size: 2.2em;
+  /* font-size: 2.2em; */
   margin: 0;
   color: #000;
   font-family: "BreeSerif-Regular";
@@ -190,6 +202,41 @@ h3 {
   padding: 0.5rem;
   border-bottom: 1px solid #999;
 }
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  /* color: #333; */
+  color: #999;
+  transition: color 0.8s ease;
+
+}
+
+.social-item:hover{
+  cursor: pointer;
+  color: #73b6e1;
+  transform: scale(1.1);
+  transition: color 0.8s ease;
+}
+
+.social-item i {
+  font-size: 20px;
+  /* color: #73b6e1; رنگ آیکون */
+  color: #999;
+}
+.social-item:hover i {
+  color: #73b6e1; /* رنگ آیکون */
+  transition: color 0.8s ease;
+}
+
 
 .text-F {
   display: flex;
@@ -314,12 +361,13 @@ h3 {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin: 20px;
+  margin: 20px auto;
+  width: 80%;
 }
 
 .image-box {
   position: relative;
-  width: 400px;
+  /* width: 400px; */
   height: 300px;
   overflow: hidden;
   border: 2px solid #ddd;
@@ -375,12 +423,6 @@ h3 {
   gap: 1rem;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -395,6 +437,14 @@ a {
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 10px auto;
   background: #fafafa;
+}
+
+.card-address{
+  margin: 0 auto;
+  padding: 0.5em;
+  border: 1px solid #999;
+  text-align: left;
+  color: #000;
 }
 
 /* افکت‌های انیمیشنی برای نمایش بخش‌ها */
@@ -497,15 +547,18 @@ a {
 }
 
 .product-bottom-details {
-  overflow: hidden;
+  /* overflow: hidden; */
   border-top: 1px solid #eee;
   padding-top: 20px;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 .product-bottom-details div {
   float: left;
-  padding: 0 1em;
+  /* padding: 0 1em; */
 }
 
 .product-bottom-details div a:hover {
@@ -532,7 +585,7 @@ a {
 .product-links a {
   display: inline-block;
   margin-left: 5px;
-  color: #e1e1e1;
+color: #73b6e1;
   transition: 0.3s;
   font-size: 17px;
 }
@@ -729,12 +782,12 @@ a {
 
 
 .view-details {
-  background: linear-gradient(45deg, #73b6e1, #2567d8);
+  background: linear-gradient(135deg, #73b6e1, #4a90d9);
   color: white;
   padding: 5px 10px;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -745,6 +798,7 @@ a {
 
 .view-details:active {
   transform: scale(0.95);
+  color: white;
 }
 
 /*  product detail  */
@@ -1220,9 +1274,13 @@ a {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 } */
+ .dropdown-filter {
+  position: sticky;
+  top: 20px; /* فاصله از بالای صفحه */
+}
 .summary {
   font-size: 18px;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 10px;
   margin: 0;
   cursor: pointer;
@@ -1326,4 +1384,130 @@ a {
   margin: 0;
   color: #555;
   font-size: 14px;
+}
+
+/* our promise section */
+
+.our-promise {
+  text-align: center;
+  margin: 40px 0;
+  background-color: rgb(240, 240, 240, 1);
+ font-family: "Lora-Regular"
+}
+
+/* جعبه کلی بخش پرامیس */
+.promise-box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* عنوان بخش */
+.promise-title {
+  padding: 25px 30px;
+  text-align: left;
+}
+
+.our-promise-title {
+  font-size: 36px;
+  /* font-size: 28px; */
+  /* font-weight: bold; */
+  /* margin-bottom: 10px; */
+}
+
+.our-promise-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* بخش چهار آیتم */
+.our-promise-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.promise-item {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+.promise-icon {
+  font-size: 36px;   /* اندازه آیکون */
+  color: #333;       /* رنگ آیکون */
+  margin-bottom: 8px;
+  /* text-align: center; */
+}
+
+/*   Reviews   */
+
+.reviews {
+  text-align: center;
+  margin: 40px 0;
+  background-color: rgba(240, 240, 240, 1);
+  font-family: "Lora-Regular", serif;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.reviews-title {
+  font-size: 36px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  margin: 0 auto;
+  text-align: left;
+  width: 80%;
+  padding: 0 .5rem;
+}
+
+.reviews-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.reviews-box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-item {
+  flex: 1;
+  /* min-width: 250px; */
+  /* max-width: 300px; */
+  /* background-color: #fff; */
+  padding: 20px;
+  /* border-radius: 6px; */
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* آیکون ستاره‌ها */
+.review-stars {
+  color: #f5c518; /* رنگ طلایی */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.review-author {
+  font-size: 15px;
+  color: #444;
+  font-weight: bold;
 }

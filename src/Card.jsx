@@ -55,11 +55,11 @@ function Card() {
 
   return (
     <div className="container py-5">
-      <div className="Address">
+      <div className="card-address">
         <NavLink to="/Home">Home</NavLink>
         {<span>/Cart</span>}
       </div>
-      <h1
+      <h2
         style={{
           fontFamily: "BreeSerif-Regular",
           fontSize: "2em",
@@ -70,7 +70,7 @@ function Card() {
         className="mb-4 text-center"
       >
         Shopping Cart
-      </h1>
+      </h2>
 
       {cartItems.length === 0 ? (
         <div className="alert alert-info text-center">

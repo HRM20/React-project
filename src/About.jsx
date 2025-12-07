@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Reviews from "./Reviews";
 const About = () => {
   return (
     <div style={{margin:"1rem auto"}}>
@@ -63,6 +64,7 @@ const About = () => {
         </div>
         <img src="https://www.datocms-assets.com/99008/1696862368-andorra-luxury-watches-spirits.webp?auto=compress%2Cformat" alt="" />
       </div>
+      <Reviews />
     </div>
   )
 }

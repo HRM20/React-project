@@ -86,7 +86,7 @@ const DropdownFilter = () => {
       {/* نمایش آیتم‌های انتخاب‌شده */}
       {Object.keys(checkedItems).filter((id) => checkedItems[id]).length > 0 && (
         <div className="selected-items">
-          <h4>Selected Filters:</h4>
+          <h4>:Selected Filters</h4>
           <p>
             {categories
               .flatMap((cat) => cat.items)

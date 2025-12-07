@@ -34,52 +34,62 @@ const ProductList = ({ loading, products }) => {
   }
 
   const renderCategory = (categoryName, products) => (
-    <>
+    <div className="category-section">
+      {/* نام کتگوری */}
       <div className="category-name">{categoryName}</div>
-      <div className="product-main">
-        {products.map((product) => (
-          <div className="product-card" key={product.id}>
-            <div className="badge">Hot</div>
-            <div className="product-tumb">
-              <img
-                src={product.img || "https://placehold.co/300x300"}
-                alt={product.name}
-              />
-            </div>
-            <div className="product-details">
-              <span className="product-catagory">Category</span>
-              <h4>
-                <Link to={`/product/${product.id}`}>{product.name}</Link>
-              </h4>
-              <p>{product.description}</p>
-              <div className="product-bottom-details">
-                <div className="product-price">{product.price}</div>
-                <div>
-                  <Link to={`/product/${product.id}`} className="view-details">
-                    show details
-                  </Link>
-                </div>
-                <div className="product-links">
-                  <a href="#">
-                    <i className="bi bi-heart"></i>
-                  </a>
-                  <a href="#">
-                    <i className="bi bi-shopping-cart"></i>
-                  </a>
+
+      <div className="main-box-products">
+        {/* محصولات */}
+        <div className="product-main">
+          {products.map((product) => (
+            <div className="product-card" key={product.id}>
+              <div className="badge">Hot</div>
+              <div className="product-tumb">
+                <img
+                  src={product.img || "https://placehold.co/300x300"}
+                  alt={product.name}
+                />
+              </div>
+              <div className="product-details">
+                <span className="product-category">{product.category}</span>
+                <h4>
+                  <Link to={`/product/${product.id}`}>{product.name}</Link>
+                </h4>
+                <p>{product.description}</p>
+                <div className="product-bottom-details">
+                   <div className="product-links">
+                    <a href="#">
+                      <i className="bi bi-heart"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <Link
+                      to={`/product/${product.id}`}
+                      className="view-details"
+                    >
+                      show details
+                    </Link>
+                  </div>
+                 
+                  <div className="product-price">{product.price}</div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* فیلتر مخصوص کتگوری */}
+        <div className="dropdown-filter">
+          <DropdownFilter />
+        </div>
       </div>
-    </>
+    </div>
   );
 
   return (
-    <div className="container">
+    <div className="products-box">
       {renderCategory("MEN", products)}
       {renderCategory("WOMEN", products)}
-      <DropdownFilter />
     </div>
   );
 };
