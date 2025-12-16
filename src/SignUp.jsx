@@ -2,59 +2,63 @@ import { Link } from "react-router-dom";
 
 export default function SignUp() {
   return (
-    <div className="ll-signup">
-      <div className="signup">
-        {/* بخش تصویر - سمت چپ */}
-        <aside className="signup-img">
-          <div className="topText">
-            <p>Start your journey</p>
-          </div>
-          <div className="bottonText">
-            <div className="up-text">Create Your Account</div>
-            <div className="downtext">
-              Join us today and unlock new opportunities.  
-              Build your future with confidence.
-            </div>
-          </div>
-        </aside>
+    <div className="ll-signup d-flex align-items-center justify-content-center">
+      <div className="container">
+        <div className="row signup mx-auto">
 
-        {/* بخش فرم - سمت راست */}
-        <aside className="signup-input">
-          <div className="title-text">
-            <h6>Sign Up</h6>
-            <p>Fill in your details to create an account</p>
+          {/* تصویر */}
+          <div className="col-12 col-lg-6 signup-img d-flex flex-column justify-content-between p-4">
+            <p className="fw-semibold fs-5">Start your journey</p>
+
+            <div>
+              <h3 className="text-white">Create Your Account</h3>
+              <p className="small opacity-75">
+                Join us today and unlock new opportunities.  
+                Build your future with confidence.
+              </p>
+            </div>
           </div>
-          <div>
-            <div className="Email-input-login">
-              <label htmlFor="name">Name:</label>
-              <input type="text" placeholder="Enter Your Name" />
+
+          {/* فرم */}
+          <div className="col-12 col-lg-6 signup-input p-4">
+            <div className="title-text text-center mb-4">
+              <h6 className="title">Sign Up</h6>
+              <p className="subtitle">Fill in your details to create an account</p>
             </div>
-            <div className="Email-input-login">
-              <label htmlFor="email">Email:</label>
-              <input type="email" placeholder="Enter Your Email" />
+
+            <div className="mb-3 text-start">
+              <label>: Name</label>
+              <input type="text" className="form-control bg-light text-start" placeholder="Enter Your Name" />
             </div>
-            <div className="password-input">
-              <label htmlFor="password">Password:</label>
-              <input type="password" placeholder="Enter Your Password" />
+
+            <div className="mb-3 text-start">
+              <label>: Email</label>
+              <input type="email" className="form-control bg-light text-start" placeholder="Enter Your Email" />
             </div>
-            <div className="password-input">
-              <label htmlFor="confirmPassword">Confirm Password:</label>
-              <input type="password" placeholder="Confirm Your Password" />
+
+            <div className="mb-3 text-start">
+              <label>: Password</label>
+              <input type="password" className="form-control bg-light text-start" placeholder="Enter Your Password" />
             </div>
-            <div className="signup-box">
-              <button>Sign Up</button>
-              <button>
-                <i className="fa fa-google"></i> Sign Up with Google
+
+            <div className="mb-3 text-start">
+              <label>: Confirm Password</label>
+              <input type="password" className="form-control bg-light text-start" placeholder="Confirm Your Password" />
+            </div>
+
+            <div className="signup-box d-flex flex-column gap-2 mb-4">
+              <button className="w-100">Sign Up</button>
+              <button className="btn btn-light border w-100">
+                <i className="fa fa-google me-2"></i>Sign Up with Google
               </button>
             </div>
-            <div className="signUp">
-              Already have an account?{" "}
-              <i>
-                <Link to="/login">Login</Link>
-              </i>
-            </div>
+
+            <p className="text-center small">
+              Already have an account? <Link to="/login">Login</Link>
+            </p>
           </div>
-        </aside>
+
+        </div>
       </div>
     </div>
   );

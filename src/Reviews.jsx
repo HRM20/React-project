@@ -1,6 +1,3 @@
-import React from "react";
-// import "./Reviews.css";
-
 const Reviews = () => {
   const reviews = [
     {
@@ -21,30 +18,36 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="reviews">
-      <div className="reviews-title">
-        <p>,,</p>
-        <h2 className="reviews-header">The Reviews</h2>
-        <p className="reviews-subtitle">What People Are Saying</p>
-      </div>
+    <div className="reviews py-4">
+      <div className="container">
+        {/* عنوان بخش */}
+        <div className="reviews-title mb-4">
+          <p className="text-muted">,,</p>
+          <h2 className="reviews-header">The Reviews</h2>
+          <p className="reviews-subtitle">What People Are Saying</p>
+        </div>
 
-      <div className="reviews-box">
-        {reviews.map((review, index) => (
-          <div className="review-item" key={index}>
-            {/* آیکون ۵ ستاره */}
-            <div className="review-stars">
-              <i className="bi bi-star-fill"></i>
-              <i className="bi bi-star-fill"></i>
-              <i className="bi bi-star-fill"></i>
-              <i className="bi bi-star-fill"></i>
-              <i className="bi bi-star-fill"></i>
+        {/* آیتم‌ها */}
+        <div className="row g-4">
+          {reviews.map((review, index) => (
+            <div className="col-12 col-md-6 col-lg-4" key={index}>
+              <div className="review-item h-100 p-3 text-left  rounded">
+                {/* آیکون ۵ ستاره */}
+                <div className="review-stars mb-2 text-warning">
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                  <i className="bi bi-star-fill"></i>
+                </div>
+                <p className="review-text mb-2">"{review.text}"</p>
+                <p className="review-author mb-0">
+                  <strong>{review.author}</strong> — {review.location}
+                </p>
+              </div>
             </div>
-            <p className="review-text">"{review.text}"</p>
-            <p className="review-author">
-              <strong>{review.author}</strong> — {review.location}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

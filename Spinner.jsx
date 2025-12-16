@@ -1,4 +1,4 @@
-import SpinnerGIF from "./src/img/Hourglass.gif"
+import SpinnerGIF from "./src/img/Material wave loading.gif"
 
 const Spinner = () =>{
     return(
